@@ -40,6 +40,9 @@ namespace Dimous\Imperia {
                         "SURNAME" => "USER.LAST_NAME",
                         "PATRONYMIC" => "USER.SECOND_NAME",
                     ],
+                    "order" => [
+                        "DATE" => "DESC"
+                    ],
                     "limit" => $nLimit,
                     "offset" => $nOffset,
                 ])->fetchAll()
