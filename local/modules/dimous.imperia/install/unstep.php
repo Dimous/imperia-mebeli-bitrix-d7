@@ -1,5 +1,5 @@
-<?php if ($errorException = $APPLICATION->GetException()): ?>
-    <?=CAdminMessage::ShowMessage($errorException->GetString())?>
+<?php if (($oException = $APPLICATION->GetException())): ?>
+    <?=CAdminMessage::ShowMessage($oException->GetString())?>
 <?php else: ?>
     <?=CAdminMessage::ShowNote("Удаление модуля успешно завершено")?>
 <?php endif ?> 
