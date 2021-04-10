@@ -16,7 +16,7 @@ class dimous_imperia extends CModule {
     }
     //---
 
-	public function InstallDB() {
+    public function InstallDB() {
         global $DB;
 
         $DB->Query("CREATE TABLE IF NOT EXISTS `auth_log` (`ID` int not null auto_increment, `USER_ID` int not null, `DATE` datetime, PRIMARY KEY (`ID`))");
