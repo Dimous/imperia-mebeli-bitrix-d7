@@ -27,7 +27,7 @@ $oTabControl->begin();
 
     <?php __AdmSettingsDrawList($sId, $aOptions) ?>
 
-	<?php $oTabControl->buttons([]) ?>
+    <?php $oTabControl->buttons([]) ?>
 </form>
 
 <?php
