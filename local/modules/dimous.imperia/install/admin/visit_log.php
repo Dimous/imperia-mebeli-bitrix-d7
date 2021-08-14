@@ -1,5 +1,6 @@
 <?php
-use Bitrix\Main\{
+use Bitrix\Main\{    
+    Loader,
     // Grid\Options,
     UI\PageNavigation,
 };
@@ -7,7 +8,7 @@ use Dimous\Imperia\Main;
 
 require_once $_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_admin_before.php";
 
-CModule::IncludeModule("dimous.imperia");
+Loader::includeModule("dimous.imperia");
 
 $APPLICATION->SetTitle("Список посещений");
 
